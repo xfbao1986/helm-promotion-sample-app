@@ -20,7 +20,7 @@ service:
 
 
 ## Application level settings  
-appMode: qa
+appMode: dev
 certificatePath: /etc/ssl/qa
 paypalURLLocation: https://qa.paypal.example.com
 databaseUser: qa-user
