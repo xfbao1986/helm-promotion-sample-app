@@ -1,0 +1,16 @@
+# kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+helmCharts:
+- name: sample
+  repo: ../../sample-app
+  releaseName: sample
+  namespace: default
+  version: 0.1.0
+  valuesFile: values.yaml
+
+# patches:
+# - path: patches/node_affinity_deployment.yaml
+#   target:
+#     kind: Deployment
